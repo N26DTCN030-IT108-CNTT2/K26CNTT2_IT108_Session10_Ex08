@@ -48,4 +48,16 @@ Bảng dữ liệu sau khi xóa bỏ tiêu đề trang trí, loại bỏ hàng t
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Nguyễn Văn An | CNTT | 8.5 | Đã duyệt |
 | 2 | Trần Thị Bình | CNTT | 7.9 | Chờ duyệt |
-| 3 | Lê Minh
+| 3 | Lê Minh Châu | Điện tử | 8.2 | Đã duyệt |
+
+*(Dòng thống kê `TỔNG SỐ CNTT: 45` được chuyển ra ngoài bảng dữ liệu thô hoặc đặt ở file/sheet báo cáo riêng)*.
+
+---
+
+### 2. Xử lý khoảng trắng thừa và thao tác lọc đa điều kiện
+
+#### Bước 1: Làm sạch dữ liệu bằng hàm TRIM()
+Tạo một cột phụ `Họ và Tên Chuẩn` bên cạnh cột B và áp dụng công thức:
+
+```excel
+=TRIM(B3)
